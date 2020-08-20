@@ -1,6 +1,5 @@
 # pjd-os
-My new operating system!
 
-There is the source code for the operating system that I created.Feel free to edit the source code and create your own OS.
+This was only ment to be a test for myself to create an operating system in Assembly.
 
-Current version:1.0
+It is deprecated. It is no longer in active development.
