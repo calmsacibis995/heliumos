@@ -1,3 +1,14 @@
+;--------------------------------------------------------------------------
+; PJD OS v1.0 - An attempt to make an operating system based on MikeOS 4.1.
+; Note that this version has no comments of any sort, because at the time
+; I was too lazy to write them.
+;
+; Copyright (c) 2006 - 2010 The MikeOS Developers.
+; Copyright (c) 2019 calmsacibis995.
+;
+; kernel.asm - PJD OS kernel
+;--------------------------------------------------------------------------
+
 	BITS 16
 
 	%DEFINE PJDOS_VER '1.0'
