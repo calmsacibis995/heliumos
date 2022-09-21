@@ -122,7 +122,7 @@ no_autorun_bin:
 	call os_clear_screen
 	mov ax, 32768
 	call os_run_basic
-	jmp app_selectorax
+	jmp app_selector
 	push ax
 
 option_screen:
