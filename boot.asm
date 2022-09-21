@@ -1,3 +1,11 @@
+;--------------------------------------------------------------------------
+; PJD OS v1.0 - An attempt to make an operating system based on MikeOS 4.1.
+; Note that this version has no comments of any sort, because at the time
+; I was too lazy to write them.
+;
+; boot.asm - Bootloader code
+;--------------------------------------------------------------------------
+
 	BITS 16
 
 	jmp short bootloader_start
