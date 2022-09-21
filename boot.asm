@@ -3,6 +3,9 @@
 ; Note that this version has no comments of any sort, because at the time
 ; I was too lazy to write them.
 ;
+; Copyright (c) 2006 - 2010 The MikeOS Developers.
+; Copyright (c) 2019 calmsacibis995.
+;
 ; boot.asm - Bootloader code
 ;--------------------------------------------------------------------------
 
