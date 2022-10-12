@@ -4,7 +4,7 @@
 ; I was too lazy to write them.
 ;
 ; Copyright (c) 2006 - 2010 The MikeOS Developers.
-; Copyright (c) 2019 calmsacibis995.
+; Copyright (c) 2019 Stefanos Stefanidis.
 ;
 ; kernel.asm - PJD OS kernel
 ;--------------------------------------------------------------------------
