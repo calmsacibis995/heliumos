@@ -350,7 +350,7 @@ exit:
 	bas_extension		db 'BAS', 0
 
 	prompt			db 'cli> ', 0
-	help_text		db 'Inbuilt commands: DIR, CAT, CLS, HELP, TIME, DATE, VER, EXIT', 13, 10, 0
+	help_text		db 'Inbuilt commands: DIR, CAT, CLS, HELP, TIME, DATE, VER, MIKEVER, EXIT', 13, 10, 0
 	invalid_msg		db 'No such command or program', 13, 10, 0
 	nofilename_msg		db 'No filename specified', 13, 10, 0
 	notfound_msg		db 'File not found', 13, 10, 0
