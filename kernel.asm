@@ -1,21 +1,23 @@
 ;--------------------------------------------------------------------------
-; PJD OS v1.0 - An attempt to make an operating system based on MikeOS 4.1.
-; Note that this version has no comments of any sort, because at the time
+; HeliumOS v1.1 - An attempt to make an operating system based on MikeOS 4.1.
+; Note that this version has almost no comments, because at the time
 ; I was too lazy to write them.
 ;
 ; Copyright (c) 2006 - 2010 The MikeOS Developers.
-; Copyright (c) 2019 Stefanos Stefanidis.
+; Copyright (c) 2019, 2022 - 2023 Stefanos Stefanidis.
 ;
-; kernel.asm - PJD OS kernel
+; kernel.asm - HeliumOS kernel
 ;--------------------------------------------------------------------------
 
 	BITS 16
 
-	%DEFINE PJDOS_VER '1.0'
-	%DEFINE PJDOS_API_VER 5
+	%DEFINE HELIUM_VER '1.1'
+	%DEFINE MIKEOS_VER '4.1'		; For backwards compatibility with MikeOS
+	%DEFINE HELIUM_API_VER 2
 
 	disk_buffer	equ	24576
 
+; Call vectors. Outdated vectors will get removed in future releases.
 os_call_vectors:
 	jmp os_main
 	jmp os_move_cursor
@@ -145,10 +147,10 @@ option_screen:
 
 	jmp option_screen
 
-	os_init_msg			db 'Welcome to PJD OS', 0
-	os_version_msg			db 'Version ', PJDOS_VER, 0
+	os_init_msg			db 'Welcome to HeliumOS ', 0
+	os_version_msg			db 'Version ', HELIUM_VER, 0
 
-	dialog_string_1			db 'PJD OS is made by ZeroCool32;', 0
+	dialog_string_1			db 'HeliumOS is made by ZeroCool32;', 0
 	dialog_string_2			db 'Please select an interface: OK for the', 0
 	dialog_string_3			db 'program menu, Cancel for command line.', 0
 
@@ -267,8 +269,8 @@ not_bas_extension:
 	bin_ext				db 'BIN'
 	bas_ext				db 'BAS'
 
-	kerndlg_string_1		db 'Error 1:Cannot load PJD OS kernel!', 0
-	kerndlg_string_2		db 'kernel.bin is required to run PJD OS and', 0
+	kerndlg_string_1		db 'Error 1:Cannot load HeliumOS kernel!', 0
+	kerndlg_string_2		db 'kernel.bin is required to run HeliumOS and', 0
 	kerndlg_string_3		db 'is not a regular program.', 0
 
 	ext_string_1			db 'Error 2:Invalid filename extension! You can', 0
