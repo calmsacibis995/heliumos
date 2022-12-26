@@ -6,7 +6,7 @@
 ; Copyright (c) 2006 - 2010 The MikeOS Developers.
 ; Copyright (c) 2019, 2022 - 2023 Stefanos Stefanidis.
 ;
-; boot.asm - Bootloader code
+; bootload.asm - Bootloader code
 ;--------------------------------------------------------------------------
 ; ==================================================================
 ; The Mike Operating System bootloader
